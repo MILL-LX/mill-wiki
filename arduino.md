@@ -1,4 +1,4 @@
-# Arduino Resources
+# Arduino
 
 ## Offical Arduino Pages
 
