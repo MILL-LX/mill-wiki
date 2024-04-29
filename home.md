@@ -6,12 +6,12 @@ This wiki is also available on [GitHub](https://github.com/lx-mill/mill-wiki).
 
 ## Resources
 
-[Arduino](arduino.md)
-[Raspberry Pi](raspberry.md)
-[Configuring Grbl for Plotter using Servo and CoreXY](grbl_for_plotter.md)
-[OSC - Open Sound Control](osc.md)
-[RGB over Serial](rgb-over-serial.md)
+[Arduino](arduino.md)  
+[Raspberry Pi](raspberry.md)  
+[Configuring Grbl for Plotter using Servo and CoreXY](grbl_for_plotter.md)  
+[OSC - Open Sound Control](osc.md)  
+[RGB over Serial](rgb-over-serial.md)  
 ## Projects
 
-[Maus Hábitos - Morgan Plotter](morgan.md)
-[Singing Plotter: Translating Between Sound and Motion](singing-plotter.md)
+[Maus Hábitos - Morgan Plotter](morgan.md)  
+[Singing Plotter: Translating Between Sound and Motion](singing-plotter.md)  
