@@ -1,6 +1,6 @@
 # MORGAN // Resident Plotter at Maus Hábitos
 
-![](media/plotter/morgan.jpg)
+![](../media/plotter/morgan.jpg)
 
 ---
 
@@ -51,15 +51,15 @@ https://inkscape.org
 
 4. Open the gcode-for-plotter dialog: `Extensions > G-code for Plotter > Generate G-code`. If needed, change the directory to where you would like to export your G-code file, and edit the filename.
 
-![](media/plotter/inkscape.png)
+![](../media/plotter/inkscape.png)
 
 5. Click `Apply` to start the script.  For complex drawings it may take many minutes, or even hours to export the file.  While the script is running, it will display an empty dialog box.
 
-![](media/plotter/inkscape_exporting.png)
+![](../media/plotter/inkscape_exporting.png)
 
 6. Once the script has finished you can check it using the [G-Code Q'n'dirty toolpath simulator](https://nraynaud.github.io/webgcode/), by dragging the file onto the page to simulate it.  As well as showing you the toolpath, it will estimate the duration of the job and show you the drawing dimensions.  Make sure the drawing x and y start at 0, and show the dimensions you were expecting (these are the dimensions of the drawing, not the page).
 
-![](media/plotter/gcode-simulation.png)
+![](../media/plotter/gcode-simulation.png)
 
 
 ### PART 2. Drawing with Morgan
@@ -78,43 +78,43 @@ https://inkscape.org
     - If the machine is not already connected, click `Open` in the connection widget.
     - The firmware selected should be `Grbl`.
     - The port should be `/dev/ttyS0` and the baud rate `115200`.
-    ![](media/plotter/(open-connection.png)
+    ![](../media/plotter/(open-connection.png)
 
 3. Take Morgan Home
     1. If the machine has just been switched on or reset, click `Reset`.  You should see `Grbl 1.1f ['$' for help]` appear in the console widget.  
-    ![](media/plotter/reset.png)  
-    ![](media/plotter/console-connected.png)  
+    ![](../media/plotter/reset.png)  
+    ![](../media/plotter/console-connected.png)  
     2. Click `Homing`, and the toolhead will first move in the X and then Y axes, until it hits the endstop switches.  Once the homing cycle has completed you should be able to use the jog controls.  
-    ![](media/plotter/home.png)
+    ![](../media/plotter/home.png)
 
 4. Set the Work Zero
     - You can skip this step if you are using the whole area of the machine for your drawing.
     1. Using the jog controls, move the toolhead to where you would like to put the origin of your drawing.  You can change the jog step size using the +/- buttons or the drop down menu.  
-    ![](media/plotter/axes-jog.png)  
+    ![](../media/plotter/axes-jog.png)  
     2. Once the toolhead is in the right position, click `Set Zero`.  The work position should now read (0,0).
-    ![](media/plotter/axes-zero.png)
+    ![](../media/plotter/axes-zero.png)
 
 5. Set up the Pen
     - After you have set the work zero you can continue using the jog controls to move the toolhead to a comfortable position to access and adjust the pen.
     1. Move the toolhead to the pen-down position (700 by default) by sending the `M4 S700` command.  
-    ![](media/plotter/pen-down.png)  
+    ![](../media/plotter/pen-down.png)  
     2. Put an empty pen holder into the toolhead, and secure it with the large screw (1).  If the pen is very large, you can put it directly into the toolhead without the extra pen-holder.  
-    ![](media/plotter/pen-adjust-1.png)  
+    ![](../media/plotter/pen-adjust-1.png)  
     3. While holding the pen so that it is touching the glass/paper, and pull back the toolhead so that there is a small gap (3-4mm) between the bearing and the cam (2). Then tighten the small screw (3).  
-    ![](media/plotter/pen-adjust-2.png)  
+    ![](../media/plotter/pen-adjust-2.png)  
     4. Move the toolhead to the pen-up position (200 by default) by sending the `M4 S200` command, and check that there is enough gap between the pen tip and the drawing surface.  
-    ![](media/plotter/pen-up.png)
+    ![](../media/plotter/pen-up.png)
 
 6. Upload Your G-code
     - By clicking `Upload G-code` in the preview window and selecting your file.  
-    ![](media/plotter/gcode-upload.png)  
+    ![](../media/plotter/gcode-upload.png)  
     - The preview will show the complete toolpath, including when the pen is not drawing.
     - You can navigate the preview by clicking and dragging to pan, and scroll to zoom.
     - You can unload the G-code by clicking the `X`.
 
 7. Start Drawing
     - If the preview looks correct click `play`.  You can pause the drawing at any time by clicking `pause` or cancel it by clicking `stop`.  
-    ![](media/plotter/gcode-preview.png)
+    ![](../media/plotter/gcode-preview.png)
 
 The G-code widget will also show the progress of the drawing.
 
@@ -161,8 +161,8 @@ The RX connection can be received simulatneously by the Raspberry Pi and the USB
 
 If the toolhead tries to move outside of the limits of the drawing area, the machine will enter an alarm state.  This can be detected via the coordinate position (soft limits), or one of the limit switches (hard limits).
 
-![](media/plotter/console_hard-limit.png)
-![](media/plotter/console_soft-limit.png)
+![](../media/plotter/console_hard-limit.png)
+![](../media/plotter/console_soft-limit.png)
 
 This can happen when:
   * The drawing is too large.
@@ -172,9 +172,9 @@ This can happen when:
 
 Whenever this happens, you need to reset the machine and redo the homing cycle.  You will lose the work zero and will have to define it again.
 
-![](media/plotter/reset.png)
+![](../media/plotter/reset.png)
 
-![](media/plotter/home.png)
+![](../media/plotter/home.png)
 
 
 ### Morgan made loud noises so I hit the emergency stop.
@@ -199,12 +199,12 @@ Try readjusting the pen position so that this gap is slightly larger.
 
 This can be caused by the orientation points in Inkscape.  Ensure that the left-most point is at (0,0), and the right is at (100,0):
 1. Double-click the points to enter the group.
-![](media/plotter/inkscape-orientation-points_grouped.png)
+![](../media/plotter/inkscape-orientation-points_grouped.png)
 
 2. Select the point you want to edit, and check its position in the tool control bar. Make sure the units are in mm.
-![](media/plotter/inkscape-orientation-points_inside-group.png)
+![](../media/plotter/inkscape-orientation-points_inside-group.png)
 
-![](media/plotter/inkscape-orientation-points_position.png)
+![](../media/plotter/inkscape-orientation-points_position.png)
 
 3. When you are done, double-click the background to exit the group.
 Do not ungroup the orientation points, or the script will not be able to find them and will create new ones.
@@ -218,7 +218,7 @@ If there are lines missing from the drawing, or other strange artefacts, try mak
 ### The preview in CNCjs is in 3D and I cannot pan.
 
 Make sure the mouse control is set to `Move the Camera` in order to pan the view (1).  You can return to a 2D view by selecting the top view shortcut (2) (you may need to select another view first).
-![](media/plotter/stuck-in-3d.png)
+![](../media/plotter/stuck-in-3d.png)
 
 
 

@@ -15,7 +15,7 @@ after installing, add extra folders to path:
 
 ### Example 1 : Direct messages between two machines
 
-![](media/osc_pd_pi.png)  
+![](../media/osc_pd_pi.png)  
 
 Neste exemplo temos dois raspberrypi ligados à mesma rede.  
 
@@ -27,7 +27,7 @@ Each one receives OSC messages via `udpsend` and `udpreceive`, provided by the o
 
 ### Example 2 : Talking through a server
 
-![](media/osc_pi_server_1.png)  
+![](../media/osc_pi_server_1.png)  
 
 Dois raspberrypi ligados a um servidor através da mesma rede.  
 
@@ -43,7 +43,7 @@ On the server the connections between `udpreceive` and `udpsend` are used to rou
 
 ### Example 3 : Talking through a server and choosing destinations
 
-![](media/test_osc_3.png)  
+![](../media/test_osc_3.png)  
 
 Dois raspberrypi ligados a um servidor através da mesma rede.  
 
@@ -62,8 +62,8 @@ In this case each the patch running on each pi can address the messages and the 
 ### Example 1 : Sending/receiving via ethernet
 
 
-![](media/osc_pd_arduino_1.jpg)  
-![](media/test_osc_4.png)  
+![](../media/osc_pd_arduino_1.jpg)  
+![](../media/test_osc_4.png)  
 
 In this example the we can control the state of an LED on the arduino via pure data, and receive values from the LDR light sensor.  
 
@@ -74,12 +74,12 @@ In this case, the arduino will send osc messages to the source of the messages i
 We also tested this with the Adafruit Feather M0 Adalogger + Ethernet Wing.
 
 
-![](media/dsc07419_1280.jpg?direct)  
+![](../media/dsc07419_1280.jpg?direct)  
 
 ### Example 2 : Sending/receiving via wifi with esp8266
 
 
-![](media/dsc07418_1280.jpg?direct)  
+![](../media/dsc07418_1280.jpg?direct)  
 
 This example is the same, except communication is over wifi using the Adafruit Feather ESP8266.  This time we are also sending messages from the Feather to a defined IP, set with the `remote_ip` variable.
 

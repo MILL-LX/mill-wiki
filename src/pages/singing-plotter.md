@@ -6,10 +6,10 @@ We would like to use this to drive a plotter based on the live sound input captu
 
 [GitHub Repository](https://github.com/tiago-rorke/singing-plotter)  
 
-![](media/dsc08643.jpg)  
+![](../media/dsc08643.jpg)  
 
-![](media/dsc08641.jpg)  
+![](../media/dsc08641.jpg)  
 _NEMA 17 stepper motor with microphone_  
 
-![](media/dsc08637.jpg)  
+![](../media/dsc08637.jpg)  
 _Pure Data running Raspberry Pi 3, and arduino Uno with GRBL shield and A4988 stepper driver_  
