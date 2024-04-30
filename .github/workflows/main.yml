@@ -8,11 +8,8 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v4
 
-    - name: Convert Markdown to HTML
-      uses: jaywcjlove/markdown-to-html-cli@main
-      with:
-        source: ./src/
-        output: ./html/
+    - run: npm i markdown-to-html-cli -g
+    - run: markdown-to-html --source src/ --output html/
 
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
