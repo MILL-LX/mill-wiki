@@ -7,16 +7,26 @@
       <meta name="author" content="MILL - Makers in Little Lisbon">
       <title>MILL Wiki</title>
       <link rel="canonical" href="https://wiki.mill.pt">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="<%= rootPath %>/style.css">
-      <link rel="stylesheet" href="<%= rootPath %>/bootstrap.min.css">
+      <link rel="stylesheet" href="<%= rootPath %>/bootstrap.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
    </head>
-   <body class="bg-light">
+   <tbody>
       <div class="container">
-         <header class="d-flex flex-wrap text-bg-dark justify-content-left py-2 my-3">
-            <!--
-            <div class="d-flex align-items-left mb-3 mb-md-0 me-md-auto">
-            <span class="fs-4"></span>
+         <header>
+            <div class="row py-2 my-3">
+               <div class="col col-4">
+                  <span class="logo"><a href="https://mill.pt"><img src="<%= rootPath %>/mill_logo.png"></a></span>
+               </div>
+               <div class="col col-4"></div>
+               <div class="col col-4 home-link">
+                  <span><a href="<%= rootPath %>"><h3>Wiki Home</h3></a></span>
+               </div>
             </div>
-             -->
          </header>
-         <main class="main-container">
+      </div>
+      <hr class="divider"/>
+      <div class="container">
+         <main class="main-container my-5">

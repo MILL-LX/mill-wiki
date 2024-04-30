@@ -4,7 +4,7 @@ Public knowledge repository of the Makers In Little Lisbon community.
 
 Available at https://wiki.mill.pt.
 
-You can also access the wiki directly here: [pages/home.md](pages/home.md).
+You can also access the wiki directly here: [src/home.md](src/home.md).
 
 The MILL Wiki is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
 

@@ -1,0 +1,54 @@
+
+@font-face {
+  font-family: "Screener";
+  src: url("fonts/screener-sc.ttf");
+}
+
+@font-face {
+  font-family: "Abel";
+  src: url("fonts/abel-regular.ttf");
+}
+
+.dm-sans-font, p {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title-font-bold, h1, h2 {
+  font-family: "Screener", sans-serif;
+}
+
+.title-font, h3, h4 {
+  font-family: "Abel", sans-serif;
+}
+
+.main-container {
+  min-height: 600px;
+}
+
+.main-container img {
+  max-width: 100%;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.logo img {
+  width: 163px;
+}
+
+.home-link {
+  align-content: center !important;
+  text-align:right !important;
+}
+.home-link a {
+  color: #000;
+  text-decoration: none;
+}
+
+.divider {
+  border: 1px solid;
+  color: #000;
+  opacity: 1;
+}
