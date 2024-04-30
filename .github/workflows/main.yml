@@ -8,8 +8,8 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v4
 
-    - run: npm i markdown-to-html-cli -g
-    - run: markdown-to-html-cli src/*.md --output "html"
+    - run: npm install -g tinyjam
+    - run: tinyjam src/ public/
 
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -17,5 +17,5 @@ jobs:
         server: 45.87.81.173
         username: u731823253.mill.pt
         password: ${{ secrets.ftp_password }}
-        local-dir: ./html/
+        local-dir: ./public/
         server-dir: /public_html/wiki/

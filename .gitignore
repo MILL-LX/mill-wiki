@@ -1,1 +1,3 @@
 .obsidian/*
+public/*
+!public/.htaccess
