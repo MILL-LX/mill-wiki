@@ -1,14 +1,20 @@
 on: push
-name: 🚀 Deploy website on push
+name: Deploy website on push
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
+    - name: Get latest code
       uses: actions/checkout@v4
-    
-    - name: 📂 Sync files
+
+    - name: Convert Markdown to HTML
+      uses: jaywcjlove/markdown-to-html-cli@main
+      with:
+        source: ./src/
+        output: ./html/
+
+    - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: 45.87.81.173
