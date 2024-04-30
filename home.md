@@ -11,6 +11,7 @@ This wiki is also available on [GitHub](https://github.com/lx-mill/mill-wiki).
 [Configuring Grbl for Plotter using Servo and CoreXY](grbl_for_plotter.md)  
 [OSC - Open Sound Control](osc.md)  
 [RGB over Serial](rgb-over-serial.md)  
+
 ## Projects
 
 [Maus Hábitos - Morgan Plotter](morgan.md)  
