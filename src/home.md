@@ -15,4 +15,4 @@ This wiki is also available on [GitHub](https://github.com/MILL-LX/mill-wiki).
 ## Projects
 
 [Maus Hábitos - Morgan Plotter](pages/morgan.md)  
-[Singing Plotter: Translating Between Sound and Motion](singing-pages/plotter.md)  
+[Singing Plotter: Translating Between Sound and Motion](pages/singing-plotter.md)  

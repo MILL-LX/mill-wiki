@@ -24,6 +24,11 @@
   font-family: "Abel", sans-serif;
 }
 
+.container {
+  max-width: 1000px !important;
+  padding: 0 20px !important;
+}
+
 .main-container {
   min-height: 600px;
 }
@@ -51,4 +56,8 @@
   border: 1px solid;
   color: #000;
   opacity: 1;
+}
+
+.license {
+  font-size: 0.8rem;
 }
