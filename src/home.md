@@ -10,7 +10,7 @@ This wiki is also available on [GitHub](https://github.com/MILL-LX/mill-wiki).
 [Raspberry Pi](pages/raspberry.md)  
 [Configuring Grbl for Plotter using Servo and CoreXY](pages/grbl_for_plotter.md)  
 [OSC - Open Sound Control](pages/osc.md)  
-[RGB over Serial](rgb-over-pages/serial.md)  
+[RGB over Serial](pages/rgb-over-serial.md)  
 
 ## Projects
 
