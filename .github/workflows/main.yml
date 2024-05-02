@@ -14,8 +14,8 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: 45.87.81.173
-        username: u731823253.mill.pt
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_usr }}
         password: ${{ secrets.ftp_password }}
         local-dir: ./public/
         server-dir: /public_html/wiki/
