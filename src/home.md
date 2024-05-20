@@ -6,6 +6,7 @@ This wiki is also available on [GitHub](https://github.com/MILL-LX/mill-wiki).
 
 ## Resources
 
+[Online CAD Tools and Repositories](pages/cad_online.md)  
 [Arduino](pages/arduino.md)  
 [Raspberry Pi](pages/raspberry.md)  
 [Configuring Grbl for Plotter using Servo and CoreXY](pages/grbl_for_plotter.md)  
