@@ -41,42 +41,42 @@ Open [CNCjs](http://morgan:8000) to draw the Gcode
     - The firmware selected should be `Grbl`.
     - The port should be `/dev/ttyS0` and the baud rate `115200`.
 
-    ![](./media/open-connection.png)  
+    ![](../media/plotter/open-connection.png)  
 
 2. Home the machine
     1. If the machine has just been switched on or reset, click `Reset`.  You should see `Grbl 1.1f ['$' for help]` appear in the console widget.  
-    ![](./media/reset.png)  
-    ![](./media/console-connected.png)  
+    ![](../media/plotter/reset.png)  
+    ![](../media/plotter/console-connected.png)  
     2. Click `Homing`, and the toolhead will first move in the X and then Y axes, until it hits the endstop switches.  Once the homing cycle has completed you should be able to use the jog controls.  
-    ![](./media/home.png)
+    ![](../media/plotter/home.png)
 
 3. Set the Work Zero
     1. Using the jog controls, move the toolhead to where you would like to put the origin of your drawing.  You can change the jog step size using the +/- buttons or the drop down menu.  If you are using the whole area of the machine for your drawing, leave the toolhead in the home position.  
-    ![](./media/axes-jog.png)  
+    ![](../media/plotter/axes-jog.png)  
     2. Once the toolhead is in the right position, click `Set Zero`.  The work position should now read (0,0).
-    ![](./media/axes-zero.png)
+    ![](../media/plotter/axes-zero.png)
 
 4. Set up the Pen
     - After you have set the work zero you can continue using the jog controls to move the toolhead to a comfortable position to access and adjust the pen.
     1. Move the toolhead to the pen-down position (700 by default) by sending the `M4 S700` command.  
-    ![](./media/pen-down.png)  
+    ![](../media/plotter/pen-down.png)  
     2. Put an empty pen holder into the toolhead, and secure it with the large screw (1).  If the pen is very large, you can put it directly into the toolhead without the extra pen-holder.  
-    ![](./media/pen-adjust-1.png)  
+    ![](../media/plotter/pen-adjust-1.png)  
     3. While holding the pen so that it is touching the drawing surface, and pull back the toolhead so that there is a small gap (3-4mm) between the bearing and the cam (2). Then tighten the small screw (3).  
-    ![](./media/pen-adjust-2.png)  
+    ![](../media/plotter/pen-adjust-2.png)  
     4. Move the toolhead to the pen-up position (300 by default) by sending the `M4 S300` command, and check that there is enough clearance between the pen tip and the drawing surface.  
-    ![](./media/pen-up.png)
+    ![](../media/plotter/pen-up.png)
 
 5. Upload Your G-code
     - By clicking `Upload G-code` in the preview window and selecting your file.  
-    ![](./media/gcode-upload.png)  
+    ![](../media/plotter/gcode-upload.png)  
     - The preview will show the complete toolpath, including when the pen is not drawing.
     - You can navigate the preview by clicking and dragging to pan, and scroll to zoom.
     - You can unload the G-code by clicking the `X`.
 
 6. Start Drawing
     - If the preview looks correct click `play`.  You can pause the drawing at any time by clicking `pause` or cancel it by clicking `stop`.  
-    ![](./media/gcode-preview.png)
+    ![](../media/plotter/gcode-preview.png)
 
 The G-code widget will also show the progress of the drawing.
 
@@ -95,8 +95,8 @@ Try changing the dpi setting in svg2gcode.  Usually this should be 96, but this 
 
 If the toolhead tries to move outside of the limits of the drawing area, the machine will enter an alarm state.  This can be detected via the coordinate position (soft limits), or one of the limit switches (hard limits).
 
-![](./media/console_hard-limit.png)
-![](./media/console_soft-limit.png)
+![](../media/plotter/console_hard-limit.png)
+![](../media/plotter/console_soft-limit.png)
 
 This can happen when:
 
@@ -106,8 +106,8 @@ This can happen when:
 
 Whenever this happens, you need to reset the machine and redo the homing cycle.  You may lose the work zero and have to define it again.
 
-![](./media/reset.png)  
-![](./media/home.png)  
+![](../media/plotter/reset.png)  
+![](../media/plotter/home.png)  
 
 ### The machine made some loud noises.
 
@@ -130,7 +130,7 @@ If there are lines missing from the drawing, or other strange artefacts, try mak
 ### The preview in CNCjs is in 3D and I cannot pan.
 
 Make sure the mouse control is set to `Move the Camera` in order to pan the view (1).  You can return to a 2D view by selecting the top view shortcut (2) (you may need to select another view first).
-![](./media/stuck-in-3d.png)
+![](../media/plotter/stuck-in-3d.png)
 
 
 ---
